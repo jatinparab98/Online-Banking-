@@ -106,8 +106,8 @@ def login():
    
     #creating checkbox
     log_c=Checkbutton(anshul,text="Keep me logged in",
-                      bg="powder blue",font="aerial 16 bold",
-                       activebackground="powder blue")
+                      bg=COLOR_BLUE,font="aerial 16 bold",
+                       activebackground=COLOR_BLUE)
     log_c.place(x=540,y=415)
 
     log_b1=Button(anshul,text="LOGIN",
@@ -115,7 +115,7 @@ def login():
                       font="aerial 20 bold",
                       height=1,width=25,
                       bd=3,relief="solid",
-                 activebackground="powder blue",
+                 activebackground=COLOR_BLUE,
                   command=Window2)
     log_b1.place(x=440,y=490)
 
@@ -169,8 +169,8 @@ def Registerlogin():
 
     #creating checkbox
     log_c=Checkbutton(anshul,text="Keep me logged in",
-                      bg="powder blue",font="aerial 16 bold",
-                       activebackground="powder blue")
+                      bg=COLOR_BLUE,font="aerial 16 bold",
+                       activebackground=COLOR_BLUE)
     log_c.place(x=540,y=415)
 
     log_b1=Button(anshul,text="LOGIN",
@@ -178,7 +178,7 @@ def Registerlogin():
                       font="aerial 20 bold",
                       height=1,width=25,
                       bd=3,relief="solid",
-                 activebackground="powder blue",
+                 activebackground=COLOR_BLUE,
                   command=Window2)
     log_b1.place(x=440,y=490)
 
@@ -249,13 +249,13 @@ def register():
     global regwrad1
     global regwrad2
     regwrad1=Radiobutton(anshul,text="MALE",value=1,
-                          bg="powder blue",
+                          bg=COLOR_BLUE,
                           font="aerial 16",
-                          activebackground="powder blue")
+                          activebackground=COLOR_BLUE)
     regwrad2=Radiobutton(anshul,text="FEMALE",value=2,
-                          bg="powder blue",
+                          bg=COLOR_BLUE,
                           font="aerial 16",
-                          activebackground="powder blue")
+                          activebackground=COLOR_BLUE)
     regwrad1.place(x=800,y=260)
     regwrad2.place(x=900,y=260)
 
@@ -263,8 +263,8 @@ def register():
     #creating checkbutton
     global check
     check=Checkbutton(anshul,text="ACCEPT LICENSE AGREEMENT",
-                      bg="powder blue",font="aerial 16 ",
-                       activebackground="powder blue")
+                      bg=COLOR_BLUE,font="aerial 16 ",
+                       activebackground=COLOR_BLUE)
     check.place(x=800,y=330)
 
     #creating Button Register comfirmation
@@ -274,7 +274,7 @@ def register():
                       font="aerial 20 bold",
                       height=1,width=30,
                       bd=3,relief="solid",
-                 activebackground="powder blue",
+                 activebackground=COLOR_BLUE,
                  command=Registerlogin)
     final.place(x=450,y=600)
   
@@ -287,14 +287,19 @@ anshul.title("NET BANKING")
 anshul.configure(bg="GREY")
 anshul.geometry("1200x700+50+50")
 
+MAIN_LABEL = "ATV NET BANKING"
+NEW_REGISTRATION_LABEL = "NEW REGISTRATION"
 
-mainlabel=Label(anshul,text="ATV NET BANKING",
-                font="Verdana 32 bold",bg="powder blue",
+COLOR_BLUE = "powder blue"
+FONT_VERDENA = "Verdana 32 bold"
+
+mainlabel=Label(anshul,text=MAIN_LABEL,
+                font=FONT_VERDENA,bg=COLOR_BLUE,
                 fg="tomato3")
 mainlabel.pack(padx=3,pady=20)
 
 
-label1=Label(anshul,text="NEW REGISTRATION",bg="tomato3",
+label1=Label(anshul,text=,bg="tomato3",
              fg="Black",height=3,width=20,
              bd=8,relief="ridge",
              font="aerial 22 bold")
@@ -303,7 +308,7 @@ label1.place(x=200,y=150)
 b1=Button(anshul,text="SIGN IN",bg="tomato3",
           fg="cornsilk",height=2,width=10,
           font="aerial 22 bold",
-          activebackground="powder blue",
+          activebackground=COLOR_BLUE,
           command=register)
 b1.place(x=280,y=300)
 
@@ -316,7 +321,7 @@ label2.place(x=800,y=150)
 b2=Button(anshul,text="LOGIN",bg="tomato3",
           fg="cornsilk",height=2,width=10,
           font="aerial 22 bold",
-          activebackground="powder blue",
+          activebackground=COLOR_BLUE,
           command=login)
 b2.place(x=900,y=300)
 
