@@ -2,7 +2,7 @@ from tkinter import*
 from tkinter import messagebox as ms
 
 
-FG = FG
+FG = "Black"
 
 def logout():
     root.destroy()
