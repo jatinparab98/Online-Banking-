@@ -1,6 +1,9 @@
 from tkinter import*
 from tkinter import messagebox as ms
 
+
+FG = FG
+
 def logout():
     root.destroy()
 
@@ -21,54 +24,54 @@ def Window2():
     result="WELCOME "+name
     display=Label(root,
                 font="Verdana 32 bold",
-                fg="black")
+                fg=FG)
     display.place(x=600,y=0)
     display['text']=result
     
     x=Button(root,text="MY ACCOUNTS\nSUMMARY",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=4,width=15,
                       bd=3,relief="sunken")
     x.place(x=450,y=120)
     
     y=Button(root,text="FUNDS\nTRANSFER",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=4,width=15,
                       bd=3,relief="sunken")
     y.place(x=651,y=120)
 
     Z=Button(root,text="BILL\nPAYMENTS",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=4,width=15,
                       bd=3,relief="sunken")
     Z.place(x=450,y=245)
 
     H=Button(root,text="MOBILE\nRECHARGE",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=4,width=15,
                       bd=3,relief="sunken")
     H.place(x=651,y=245)
 
     m=Button(root,text="MINI STATEMENT",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=32,
                       bd=3,relief="sunken")
     m.place(x=450,y=370)
 
     n=Button(root,text="CHANGE PASSWORD",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=32,
                       bd=3,relief="sunken")
     n.place(x=450,y=445)
 
     o=Button(root,text="LOG OUT",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=32,
                       bd=3,relief="sunken",
@@ -84,12 +87,12 @@ def login():
 
     #creating label
     log_label1=Label(anshul,text="NAME",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=25,
                       bd=3,relief="sunken")
     log_label2=Label(anshul,text="PASSWORD",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=25,
                       bd=3,relief="sunken")
@@ -111,7 +114,7 @@ def login():
     log_c.place(x=540,y=415)
 
     log_b1=Button(anshul,text="LOGIN",
-                  bg="tomato3",fg="Black",
+                  bg="tomato3",fg=FG,
                       font="aerial 20 bold",
                       height=1,width=25,
                       bd=3,relief="solid",
@@ -148,12 +151,12 @@ def Registerlogin():
     
     #creating label
     log_label1=Label(anshul,text="NAME",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=25,
                       bd=3,relief="sunken")
     log_label2=Label(anshul,text="PASSWORD",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       font="aerial 15 bold",
                       height=2,width=25,
                       bd=3,relief="sunken")
@@ -174,7 +177,7 @@ def Registerlogin():
     log_c.place(x=540,y=415)
 
     log_b1=Button(anshul,text="LOGIN",
-                  bg="tomato3",fg="Black",
+                  bg="tomato3",fg=FG,
                       font="aerial 20 bold",
                       height=1,width=25,
                       bd=3,relief="solid",
@@ -195,7 +198,7 @@ def register():
     #main label
     global label
     label=Label(anshul,text="PLEASE FILL IN YOUR DETAILS",
-                 bg="tomato3",fg="Black",
+                 bg="tomato3",fg=FG,
                  font="consolas 27 bold",
                  height=2,width=40,
                  bd=3,relief="solid")
@@ -205,11 +208,11 @@ def register():
     global regwlabel1
     global regwlabel2
     regwlabel1=Label(anshul,text="ENTER YOUR NAME",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       height=3,width=25,
                       bd=3,relief="sunken")
     regwlabel2=Label(anshul,text="ENTER BANK ACC NO.",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       height=3,width=25,
                       bd=3,relief="sunken")
     regwlabel1.place(x=100,y=250)
@@ -227,11 +230,11 @@ def register():
     global regwlabel3
     global regwlabel4
     regwlabel3=Label(anshul,text="PASSWORD",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       height=3,width=25,
                       bd=3,relief="sunken")
     regwlabel4=Label(anshul,text="CONFIRM PASSWORD",
-                      bg="tomato3",fg="Black",
+                      bg="tomato3",fg=FG,
                       height=3,width=25,
                       bd=3,relief="sunken")
     regwlabel3.place(x=100,y=410)
@@ -270,7 +273,7 @@ def register():
     #creating Button Register comfirmation
     global final
     final=Button(anshul,text="COMFIRM SIGN UP",
-                 bg="tomato3",fg="Black",
+                 bg="tomato3",fg=FG,
                       font="aerial 20 bold",
                       height=1,width=30,
                       bd=3,relief="solid",
@@ -300,7 +303,7 @@ mainlabel.pack(padx=3,pady=20)
 
 
 label1=Label(anshul,text=,bg="tomato3",
-             fg="Black",height=3,width=20,
+             fg=FG,height=3,width=20,
              bd=8,relief="ridge",
              font="aerial 22 bold")
 label1.place(x=200,y=150)
@@ -313,7 +316,7 @@ b1=Button(anshul,text="SIGN IN",bg="tomato3",
 b1.place(x=280,y=300)
 
 label2=Label(anshul,text="EXISTING USER",bg="tomato3",
-             fg="Black",height=3,width=20,
+             fg=FG,height=3,width=20,
              bd=8,relief="ridge",
              font="aerial 22 bold")
 label2.place(x=800,y=150)
